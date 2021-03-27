@@ -9,9 +9,9 @@ class PokeCard extends StatefulWidget {
 class _PokeCardState extends State<PokeCard> {
   Pokemon bulbasaur = new Pokemon(
       'Bulbasaur',
-      '',
+      'A wild pokemon',
       'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
-      '',
+      'Grass',
       Colors.green.shade200);
 
   Pokemon ivysaur = new Pokemon(
@@ -69,7 +69,7 @@ class _PokeCardState extends State<PokeCard> {
 
   double _widthImg = 150;
   double _heightImg = 150;
-  Color _mainColor = Colors.black12;
+  Color _mainColor = Colors.grey.shade300;
   Color _secondColor = Colors.white;
   Color _textColor = Colors.white;
   double _textPokeSize = 18;
@@ -94,14 +94,6 @@ class _PokeCardState extends State<PokeCard> {
               poke.name,
               style: TextStyle(fontSize: _textPokeSize, color: _textColor),
             ),
-            /*Text(
-              poke.type,
-              style: TextStyle(fontSize: _textPokeSize),
-            ),
-            Text(
-              poke.desc,
-              style: TextStyle(fontSize: _textPokeSize),
-            )*/
           ],
         ),
       ),
@@ -135,7 +127,7 @@ class _PokeCardState extends State<PokeCard> {
     );
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: _mainColor,
+          backgroundColor: Colors.red.shade400,
           centerTitle: true,
           elevation: 1,
           title: Row(
